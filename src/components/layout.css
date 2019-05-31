@@ -1,7 +1,7 @@
 :root{
   --myBlue: #01639c;
-  --myYellow: #dfb602;
-  --myGray: #ccc;
+  --myYellow: rgb(223, 182, 2);
+  --myGray: rgb(204, 204, 204);
   --myWhite: #fff;
   --myDark: #222;
 }
@@ -21,4 +21,42 @@ h1, h2, h3, h4, h5, h6{
   font-size: 2rem;
   color: var(--myYellow);
   cursor: pointer;
+}
+
+.default-background,
+.about-background
+{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(223, 182, 2, 0.5),rgba(223, 182, 2, 0.5));
+  background-size: cover;
+  background-position: center;
+}
+.about-background{
+  min-height: 60vh;
+}
+
+.btn-yellow{
+  color: var(--myYellow);
+  border: 1px solid var(--myYellow);
+  border-radius: 0px;
+  margin: 50px;
+  font-size: 0.8rem;
+}
+.btn-yellow:hover{
+  color: var(--myDark);
+  background-color: var(--myYellow);
+  transition: 1s ease-out;
+  
+}
+.footer{
+  background: var(--myDark);
+  color: var(--myWhite);
+  font-weight: 100;
+}
+.footer a{
+  color: var(--myWhite);
+  font-weight: 100;
 }

@@ -30,7 +30,7 @@ export default class Nabar extends Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+      <nav className="navbar navbar-expand-md bg-light navbar-light">
         <img src={Logo} alt="Logo" style={{width: "50px"}}/>
         <button className="navbar-toggle" type="button" onClick={this.navbarHandler}>
           <span className="navbar-toggler-icon"></span>
