@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundImage from '../components/Globals/BackgroundSection';
 import Info from "../components/Home/info";
+import Menu from "../components/Home/Menu";
 
 
 const IndexPage = ({data}) => (
@@ -17,6 +18,7 @@ const IndexPage = ({data}) => (
    styleClass="default-background"
    />
    <Info />
+   <Menu items={data.menu} />
   </Layout>
 )
 
@@ -29,6 +31,28 @@ export const query = graphql`
       }
     }
   }
+
+  menu:allContentfulCoffeItems{
+    edges{
+      node{
+        id
+        title
+        price
+        image {
+          fixed(width:100){
+            ...GatsbyContentfulFixed_tracedSVG
+          }
+        }
+        description {
+          description
+        }
+        category
+        
+      }
+    }
+  } 
+
+
 }
 `
 
