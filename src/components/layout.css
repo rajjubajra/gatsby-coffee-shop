@@ -1,7 +1,7 @@
 :root{
   --myBlue: #01639c;
   --myYellow: rgb(223, 182, 2);
-  --myGray: rgb(204, 204, 204);
+  --myGray: rgb(238, 236, 236);
   --myWhite: #fff;
   --myDark: #222;
 }
@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6{
   color: var(--myWhite);
   font-weight: 100;
 }
-.menu{
+.menu,
+.contact{
   background-color: var(--myGray);
 }

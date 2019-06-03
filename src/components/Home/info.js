@@ -6,7 +6,7 @@ export default function info() {
   return (
     <section>
       <div className="container">
-        <Title title="Our Story" />
+        <Title title="Story" />
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
