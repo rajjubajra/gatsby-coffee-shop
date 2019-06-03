@@ -64,3 +64,8 @@ h1, h2, h3, h4, h5, h6{
 .contact{
   background-color: var(--myGray);
 }
+.snipcart-summary{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}

@@ -30,7 +30,7 @@ export default class Nabar extends Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-expand-md bg-light navbar-light">
+      <nav className="navbar navbar-expand-md bg-light navbar-light sticky-top">
         <img src={Logo} alt="Logo" style={{width: "50px"}}/>
         <button className="navbar-toggle" type="button" onClick={this.navbarHandler}>
           <span className="navbar-toggler-icon"></span>
@@ -47,6 +47,11 @@ export default class Nabar extends Component {
                 })
               }
               <li className="nav-item ml-sm-5"><FaCartArrowDown className="cart-icon snipcart-checkout"/></li>
+              <li class="snipcart-summary">
+                  <small>Items: <span class="snipcart-total-items"></span></small>
+                  <small>Amount: <span class="snipcart-total-price"></span></small>
+              </li>
+
             </ul>
         </div>
       </nav>
