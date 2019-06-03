@@ -14,17 +14,17 @@ export default function Contact() {
           {/** Name */}
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" name="name" placeholder="Your name"/>
+            <input required type="text" className="form-control" name="name" placeholder="Your name"/>
           </div>
            {/** Email */}
            <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" className="form-control" name="email" placeholder="Your email address"/>
+            <input required type="email" className="form-control" name="email" placeholder="Your email address"/>
           </div>
            {/** Message */}
            <div className="form-group">
             <label htmlFor="message">Message</label>
-            <textarea className="form-control" name="message" placeholder="Your message" rows="5"/>
+            <textarea required className="form-control" name="message" placeholder="Your message" rows="5"/>
           </div>
           <button type="submit" className="btn btn-yellow text-capitalize mt-5 btn-block">Submit</button>
         </form>
