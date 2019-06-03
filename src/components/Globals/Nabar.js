@@ -51,6 +51,12 @@ export default class Nabar extends Component {
                   <small>Items: <span class="snipcart-total-items"></span></small>
                   <small>Amount: <span class="snipcart-total-price"></span></small>
               </li>
+              <li>
+                <a href="#" class="snipcart-user-profile">
+                  <span class="snipcart-user-email">Login</span>
+                </a>
+                <a href="#" class="snipcart-user-logout">Logout</a>
+              </li>
 
             </ul>
         </div>
