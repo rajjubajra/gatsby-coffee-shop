@@ -42,14 +42,13 @@ h1, h2, h3, h4, h5, h6{
   color: var(--myYellow);
   border: 1px solid var(--myYellow);
   border-radius: 0px;
-  margin: 50px;
+  margin: 50px 5px;
   font-size: 0.8rem;
 }
 .btn-yellow:hover{
   color: var(--myDark);
   background-color: var(--myYellow);
   transition: 1s ease-out;
-  
 }
 .footer{
   background: var(--myDark);
@@ -68,4 +67,22 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   flex-direction: column;
   margin: 0px 15px;
+}
+
+ button.navbar-toggle{
+   margin: 0px 20px;
+ }
+
+@media(min-width:767px){
+  button.navbar-toggle{
+    display: none;
+  }
+}
+
+.form-group lable{
+    display: inline-block;
+    margin-bottom: 0rem;
+    margin-left: 0.15rem;
+    letter-spacing: 0.2rem;
+    color: #555;
 }
