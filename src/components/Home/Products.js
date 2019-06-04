@@ -39,7 +39,7 @@ export default function Products() {
               {
                  data.coffeeProducts.edges.map(({node:product})=>{
                    return(
-                     <Product kye={product.id} product={product} />
+                     <Product key={product.id} product={product} />
                    )
                  }) 
               }

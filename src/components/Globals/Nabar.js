@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import {Link} from 'gatsby';
 import Logo from '../../images/logo-150x150.png';
 import {FaCartArrowDown} from 'react-icons/fa';
+import {FiUserIcon} from 'react-icons/fi';
 
 export default class Nabar extends Component {
   state ={
     navbarOpen: false,
-    css: 'collapse navbar-collapse',
+    css: 'collapse navbar-collapse justify-content-between' ,
     links:[
       {
         id:1,
@@ -18,6 +19,11 @@ export default class Nabar extends Component {
         path: '/about',
         text: 'about'
       },
+      {
+        id:3,
+        path: '/contact',
+        text: 'contact'
+      }
 
     ]
   }
@@ -31,12 +37,16 @@ export default class Nabar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md bg-light navbar-light fixed-top">
-        <img src={Logo} alt="Logo" style={{width: "50px"}}/>
+
+        {/** TOGGLE BUTTON  */}
         <button className="navbar-toggle collapsed" type="button" onClick={this.navbarHandler}>
           <span className="navbar-toggler-icon"></span>
         </button>
+
+        
         <div className={this.state.css}>
-            <ul className="navbar-nav mx-auto">
+          {/** NAVIGATION MENU ITEM */}
+            <ul className="navbar-nav">
               {
                 this.state.links.map(link=>{
                   return(
@@ -46,20 +56,29 @@ export default class Nabar extends Component {
                   )
                 })
               }
+            </ul>
+            <ul className="logo">
+              <li>
+                {/** IMAGE LOGO */}
+                   <img src={Logo} alt="Logo" style={{width: "50px"}}/>
+              </li>
+            </ul>
+            {/**  SNIPCART: SHOPING CART  */}
+            <ul className="shopping-cart-item">  
               <li className="nav-item ml-sm-5"><FaCartArrowDown className="cart-icon snipcart-checkout"/></li>
-              <li class="snipcart-summary">
-                  <small>Items: <span class="snipcart-total-items"></span></small>
-                  <small>Amount: <span class="snipcart-total-price"></span></small>
+              <li className="snipcart-summary">
+                  <small>Items: <span className="snipcart-total-items"></span></small>
+                  <small>Tt. Amt: <span className="snipcart-total-price"></span></small>
               </li>
               <li>
-                <a href="#" class="snipcart-user-profile">
-                  <span class="snipcart-user-email">Login</span>
+                <a href="#" className="snipcart-user-profile">
+                  <span className="snipcart-user-email">Login</span>
                 </a>
-                <a href="#" class="snipcart-user-logout">Logout</a>
+               {/* <a href="#" className="snipcart-user-logout">Logout</a> */} 
               </li>
-
             </ul>
         </div>
+
       </nav>
     )
   }

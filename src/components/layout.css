@@ -1,6 +1,6 @@
 :root{
   --myBlue: #01639c;
-  --myYellow: rgb(223, 182, 2);
+  --myYellow: rgb(170, 109, 2);
   --myGray: rgb(238, 236, 236);
   --myWhite: #fff;
   --myDark: #222;
@@ -15,12 +15,6 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-weight: 100;
   letter-spacing: 0.25rem !important;
-}
-
-.cart-icon{
-  font-size: 2rem;
-  color: var(--myYellow);
-  cursor: pointer;
 }
 
 .default-background,
@@ -46,23 +40,69 @@ h1, h2, h3, h4, h5, h6{
   font-size: 0.8rem;
 }
 .btn-yellow:hover{
-  color: var(--myDark);
+  color: var(--myWhite);
   background-color: var(--myYellow);
   transition: 1s ease-out;
 }
+
+
+
+/** FOOTER STYLE */
 .footer{
   background: var(--myDark);
-  color: var(--myWhite);
-  font-weight: 100;
+    color: var(--myWhite);
+    font-weight: 100;
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
 }
 .footer a{
   color: var(--myWhite);
   font-weight: 100;
 }
+
+/** MENU PAGE AND CONTACT PAGE BACKGROUND */
 .menu,
 .contact{
   background-color: var(--myGray);
 }
+
+/** CONATACT FORM STYLE */
+.form-group label{
+  display: inline-block;
+  margin-bottom: 0rem;
+  margin-left: 0.15rem;
+  letter-spacing: 0.2rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+
+/** NAVBAR AND SHOPPING CART SUMMARY */
+.navbar-collapse{
+  font-size: 0.8rem;
+}
+.navbar-collapse ul li{
+  list-style: none;
+}
+.cart-icon{
+  font-size: 1.5rem;
+  color: var(--myYellow);
+  cursor: pointer;
+}
+
+.shopping-cart-item{
+    display: flex;
+    color: #444;
+}
+.shopping-cart-item li a{
+  color: #444;
+}
+.snipcart-user-email{
+  font-size: 0.75rem;
+  margin: 0px 10px;
+}
+
 .snipcart-summary{
   display: flex;
   flex-direction: column;
@@ -73,16 +113,11 @@ h1, h2, h3, h4, h5, h6{
    margin: 0px 20px;
  }
 
+
+
 @media(min-width:767px){
   button.navbar-toggle{
     display: none;
   }
 }
 
-.form-group lable{
-    display: inline-block;
-    margin-bottom: 0rem;
-    margin-left: 0.15rem;
-    letter-spacing: 0.2rem;
-    color: #555;
-}
