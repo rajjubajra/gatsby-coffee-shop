@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .shopping-cart-item li a{
   color: #444;
+  font-size: 1.5rem;
 }
 .snipcart-user-email{
   font-size: 0.75rem;
@@ -104,9 +105,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .snipcart-summary{
-  display: flex;
-  flex-direction: column;
-  margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+    justify-content: center;
+    align-items: center;
 }
 
  button.navbar-toggle{

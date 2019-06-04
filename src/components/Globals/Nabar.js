@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'gatsby';
 import Logo from '../../images/logo-150x150.png';
 import {FaCartArrowDown} from 'react-icons/fa';
-import {FiUserIcon} from 'react-icons/fi';
+import {FaUserAlt} from 'react-icons/fa';
 
 export default class Nabar extends Component {
   state ={
@@ -65,14 +65,15 @@ export default class Nabar extends Component {
             </ul>
             {/**  SNIPCART: SHOPING CART  */}
             <ul className="shopping-cart-item">  
-              <li className="nav-item ml-sm-5"><FaCartArrowDown className="cart-icon snipcart-checkout"/></li>
+              
               <li className="snipcart-summary">
-                  <small>Items: <span className="snipcart-total-items"></span></small>
-                  <small>Tt. Amt: <span className="snipcart-total-price"></span></small>
+                  <small>{/*Items:*/} <span className="snipcart-total-items"></span></small>
+                  <FaCartArrowDown className="cart-icon snipcart-checkout"/>
+                  <small>{/*Total Amount:*/}<span className="snipcart-total-price"></span></small>
               </li>
               <li>
                 <a href="#" className="snipcart-user-profile">
-                  <span className="snipcart-user-email">Login</span>
+                  <FaUserAlt className="snipcart-user-email" />
                 </a>
                {/* <a href="#" className="snipcart-user-logout">Logout</a> */} 
               </li>
