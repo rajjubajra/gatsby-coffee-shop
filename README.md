@@ -9,8 +9,8 @@
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+## 💫 Deployed to Netlify 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deployed to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://yellow-website-gatsby-coffee-shop.netlify.com)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
