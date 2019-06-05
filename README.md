@@ -6,6 +6,13 @@
 </p>
 
 
+<ul>
+<li>My first Gatsby Project</li>
+<li>Backend data - Contentful</li>
+<li>Shopping Cart - Snipcart</li>
+<li>Contact Form - formspree.io</li>
+</ul>
+
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
